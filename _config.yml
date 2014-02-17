@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://yourdomain.com
+title: Mombuyble
+subtitle: A lost bible for every mom.
+author: Y.WEN
 simple_search: http://google.com/search
 description:
 
@@ -16,10 +16,18 @@ description:
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /atom.xml
-subscribe_email:
+subscribe_rss: #/atom.xml
+subscribe_email: 
 # RSS feeds can list your email address if you like
-email:
+email: me@mombuyble.com
+
+# ----------------------- #
+#    Theme configuration    #
+#    Navigation Bar   #
+# ----------------------- #
+navigation_elements: [
+  {name: "About Me", link: "/aboutme"},
+  {name: "Code", link: "https://github.com/mombuyble"}]
 
 # ----------------------- #
 #    Jekyll & Plugins     #

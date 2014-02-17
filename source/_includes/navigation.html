@@ -1,0 +1,16 @@
+<div class="navbar">
+  <div class="navbar-inner"> 
+    <ul class="nav">
+      <li><a href="{{ root_url }}/blog/archives">Products</a></li>
+      {% for navigation_element in site.navigation_elements %}
+      <li>
+        <a href="{{ navigation_element.link }}">
+          {{ navigation_element.name }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>  
+    {% include custom/navigation.html %}
+  </div>
+</div>
+
