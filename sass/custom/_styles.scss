@@ -30,7 +30,7 @@ article.archive-article-format { box-shadow: none; padding: 0; }
 .dl-horizontal dt { width: 135px; }
 
 .footer {
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,0.6);
   font-family: "freight-sans-pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
   text-align: center;
   border-top: 1px solid #f2f2f0;
@@ -43,10 +43,6 @@ font-size: 11px;
 letter-spacing: 2px;
 text-transform: uppercase;
 color: #b3b3b1;
-}
-
-.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container{
-  width: 1200px; 
 } 
 
 #front-wrapper{
@@ -64,6 +60,12 @@ color: #b3b3b1;
   -webkit-box-shadow: none;
   box-shadow: none;
   text-align: center;
+
+  -webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 40px;
 }
 
 body{
@@ -161,7 +163,8 @@ background-image: url("/images/heroBack.jpg");
 }
 
 #front-wrapper { 
-background-color: rgba(255,255,255,0.8);  
+//background-color: rgba(255,255,255,0.8);  
+background-color: #ffffff;
 }
 
 .pull-left { 
@@ -185,4 +188,18 @@ background-color: transparent;
 border-bottom-style: none;
 box-shadow: none;
 }
+
+.footer p {
+color: #b3b3b1; 
+}
+
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container{ 
+}
+
+.span10.offset1 {
+margin-left: auto;
+margin-right: auto;
+float: inherit;
+}
+ 
 
