@@ -3,7 +3,7 @@
 # ----------------------- #
 
 url: http://mombuyble.com
-title: momBuyble
+title: Mom Buyble
 subtitle: A lost bible for every mom.
 author: Y.WEN
 simple_search: http://google.com/search
@@ -26,8 +26,8 @@ email: me@mombuyble.com
 #    Navigation Bar   #
 # ----------------------- #
 navigation_elements: [
-  {name: "About Me", link: "/aboutme"},
-  {name: "Code", link: "https://github.com/mombuyble"}]
+  {name: "Contact", link: "/contact"},
+   {name: "About", link: "/about"}]
 
 # ----------------------- #
 #    Jekyll & Plugins     #
