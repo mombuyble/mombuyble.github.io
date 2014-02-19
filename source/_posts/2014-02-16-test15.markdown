@@ -13,3 +13,6 @@ categories: ["1", "2", "3"]
 > Right angle brackets &gt; are used for block quotes.
 
 ![Smaller icon](http://smallerapp.com/favicon.ico "Title here")  
+
+![Weixin](http://farm8.staticflickr.com/7366/12629887653_01fb96b0e4_o.jpg) 
+ 
