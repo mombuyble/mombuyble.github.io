@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[momBuyble]]></title>
+  <title><![CDATA[Mom Buyble]]></title>
   <link href="http://mombuyble.com/atom.xml" rel="self"/>
   <link href="http://mombuyble.com/"/>
-  <updated>2014-02-19T00:25:52-05:00</updated>
+  <updated>2014-02-19T02:44:13-05:00</updated>
   <id>http://mombuyble.com/</id>
   <author>
     <name><![CDATA[Y.WEN]]></name>
@@ -19,6 +19,139 @@
     <updated>2014-02-16T19:48:21-05:00</updated>
     <id>http://mombuyble.com/blog/2014/02/16/test17</id>
     <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Test16]]></title>
+    <link href="http://mombuyble.com/blog/2014/02/16/test16/"/>
+    <updated>2014-02-16T19:48:19-05:00</updated>
+    <id>http://mombuyble.com/blog/2014/02/16/test16</id>
+    <content type="html"><![CDATA[<h1>一级标题</h1>
+
+<h2>二级标题</h2>
+
+<h3>三级标题</h3>
+
+<h4>强调</h4>
+
+<p><strong>粗体</strong>, 正常体 <em>斜体</em>.</p>
+
+<p><img src="http://mouapp.com/Mou_128.png" alt="Mou icon" /></p>
+
+<p><strong>strong</strong> or <strong>strong</strong> ( Cmd + B )</p>
+
+<p><em>emphasize</em> or <em>emphasize</em> ( Cmd + I )</p>
+
+<p><strong>Sometimes I want a lot of text to be bold.
+Like, seriously, a <em>LOT</em> of text</strong></p>
+
+<h4>Blockquotes</h4>
+
+<blockquote><p>引用段落</p></blockquote>
+
+<h4>Links and Email</h4>
+
+<p>An email <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#x31;&#50;&#51;&#x40;&#101;&#120;&#x61;&#x6d;&#x70;&#108;&#x65;&#46;&#99;&#x6f;&#x6d;">&#49;&#x32;&#51;&#64;&#101;&#120;&#x61;&#x6d;&#112;&#108;&#x65;&#46;&#x63;&#x6f;&#109;</a> link.</p>
+
+<p>Simple inline link <a href="http://chenluois.com">http://chenluois.com</a>, another inline link <a href="http://smallerapp.com">链接</a>, one more inline link with title <a href="http://resizesafari.com" title="a Safari extension">链接及提示</a>.</p>
+
+<p>A <a href="http://mouapp.com" title="Markdown editor on Mac OS X">reference style</a> link. Input id, then anywhere in the doc, define the link with corresponding id:</p>
+
+<p>Titles ( or called tool tips ) in the links are optional.</p>
+
+<h4>Images</h4>
+
+<p>An inline image <img src="http://smallerapp.com/favicon.ico" title="Title here" alt="Smaller icon" />, title is optional.</p>
+
+<p>A <img src="http://resizesafari.com/favicon.ico" title="Title" alt="Resize icon" /> reference style image.</p>
+
+<h4>Ordered Lists</h4>
+
+<p>Ordered lists are created using &ldquo;1.&rdquo; + Space:</p>
+
+<ol>
+<li>Ordered list item</li>
+<li>Ordered list item</li>
+<li>Ordered list item</li>
+</ol>
+
+
+<h4>Unordered Lists</h4>
+
+<p>Unordered list are created using &ldquo;*&rdquo; + Space:</p>
+
+<ul>
+<li>Unordered list item</li>
+<li>Unordered list item</li>
+<li>Unordered list item</li>
+</ul>
+
+
+<p>Or using &ldquo;&ndash;&rdquo; + Space:</p>
+
+<ul>
+<li>Unordered list item</li>
+<li>Unordered list item</li>
+<li>Unordered list item</li>
+</ul>
+
+
+<h4>Footnotes</h4>
+
+<h4>Strikethrough</h4>
+
+<p><del>Strikethrough</del></p>
+
+<h4>Fenced Code Blocks</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Fenced code blocks are like Stardard Markdown’s regular code
+</span><span class='line'>blocks, except that they’re not indented and instead rely on
+</span><span class='line'>a start and end fence lines to delimit the code block.</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Tables</h4>
+
+<table>
+<thead>
+<tr>
+<th align="left">First Header </th>
+<th align="center"> Second Header </th>
+<th align="right"> Third Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Left         </td>
+<td align="center"> Center        </td>
+<td align="right"> Right</td>
+</tr>
+<tr>
+<td align="left">Left         </td>
+<td align="center"> Center        </td>
+<td align="right"> Right</td>
+</tr>
+</tbody>
+</table>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Test15]]></title>
+    <link href="http://mombuyble.com/blog/2014/02/16/test15/"/>
+    <updated>2014-02-16T19:48:16-05:00</updated>
+    <id>http://mombuyble.com/blog/2014/02/16/test15</id>
+    <content type="html"><![CDATA[<p><img src="http://mouapp.com/Mou_128.png" alt="Mou icon" /></p>
+
+<h4>Blockquotes</h4>
+
+<blockquote><p>Right angle brackets &gt; are used for block quotes.</p></blockquote>
+
+<p><img src="http://smallerapp.com/favicon.ico" title="Title here" alt="Smaller icon" /></p>
 ]]></content>
   </entry>
   
