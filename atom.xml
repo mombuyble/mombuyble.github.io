@@ -4,7 +4,7 @@
   <title><![CDATA[momBuyble]]></title>
   <link href="http://mombuyble.com/atom.xml" rel="self"/>
   <link href="http://mombuyble.com/"/>
-  <updated>2014-02-18T20:13:43-05:00</updated>
+  <updated>2014-02-19T00:25:52-05:00</updated>
   <id>http://mombuyble.com/</id>
   <author>
     <name><![CDATA[Y.WEN]]></name>
@@ -19,30 +19,6 @@
     <updated>2014-02-16T19:48:21-05:00</updated>
     <id>http://mombuyble.com/blog/2014/02/16/test17</id>
     <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Test16]]></title>
-    <link href="http://mombuyble.com/blog/2014/02/16/test16/"/>
-    <updated>2014-02-16T19:48:19-05:00</updated>
-    <id>http://mombuyble.com/blog/2014/02/16/test16</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Test15]]></title>
-    <link href="http://mombuyble.com/blog/2014/02/16/test15/"/>
-    <updated>2014-02-16T19:48:16-05:00</updated>
-    <id>http://mombuyble.com/blog/2014/02/16/test15</id>
-    <content type="html"><![CDATA[<p><img src="http://mouapp.com/Mou_128.png" alt="Mou icon" /></p>
-
-<h4>Blockquotes</h4>
-
-<blockquote><p>Right angle brackets &gt; are used for block quotes.</p></blockquote>
-
-<p><img src="http://smallerapp.com/favicon.ico" title="Title here" alt="Smaller icon" /></p>
 ]]></content>
   </entry>
   
