@@ -29,14 +29,6 @@ article.archive-article-format { box-shadow: none; padding: 0; }
 // Add a little horizontal space in dt elements
 .dl-horizontal dt { width: 135px; }
 
-.footer {
-  background-color: rgba(255,255,255,0.6);
-  font-family: "freight-sans-pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
-  text-align: center;
-  border-top: 1px solid #f2f2f0;
-  font-size: 12px;
-}   
-
 .navbar { 
 font-family: "freight-sans-pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
 font-size: 11px;
@@ -66,15 +58,7 @@ color: #b3b3b1;
 -webkit-margin-start: 0px;
 -webkit-margin-end: 0px;
 -webkit-padding-start: 40px;
-}
-
-body{
-  background-color: transparent;
-}
-
-.wrapper_single{
-  border-bottom-style: none;	
-} 
+}  
 
 .entry-title {
 font-family: "freight-sans-pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
@@ -126,12 +110,7 @@ font-weight: 300;
 font-size: 11px;
 border-bottom: 1px solid #dededc;
 border-top: 1px solid #dededc;
-}
-
-#hero-inner { 
-background-color: rgba(0, 153, 221, 0.3);
-text-align: center;
-}
+} 
 
 blockquote {
 border-left-width: 3px;
@@ -141,20 +120,22 @@ border-left-color: #57ad68;
 
 body {  
 background-image: url("/images/heroBack.jpg"); 
+background-color: transparent;
 }
 
 #front-wrapper { 
 //background-color: rgba(255,255,255,0.8);  
-background-color: #ffffff;
-}
-
-.pull-left { 
-float: none; 
-}
+background-color: transparent;
+} 
 
 #hero { 
 background-color: transparent;
 background-image: none; 
+} 
+
+#hero-inner { 
+background-color: rgba(0, 153, 221, 0.3);
+text-align: center; 
 }
 
 #sub-hero {
@@ -170,37 +151,50 @@ border-bottom-style: none;
 box-shadow: none;
 }
 
+// footer 
 .footer {
-  border-top-style: none;
-}
-.footer p {
-color: #b3b3b1; 
-} 
+  background-color: rgba(255,255,255,0.6);
+  font-family: "freight-sans-pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  text-align: center; 
+  font-size: 12px;
+    .pull-left {
+      color: #b3b3b1;  
+      float: none; 
+    }   
+}   
 
 .span10.offset1 {
-margin-left: auto;
-margin-right: auto;
-float: inherit; 
-  h1 a {
-font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
-font-weight: 700;
-font-style: normal;
-font-size: 50px;
-text-overflow: ellipsis;
-margin-top: 0px;
-color: #FFFFFF;
-text-decoration: none;
- }
+  margin-left: auto;
+  margin-right: auto;
+  float: inherit; 
+      h1 a {
+    // font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    // font-weight: 700;
+    // font-style: normal;
+    // font-size: 50px;
+    // text-overflow: ellipsis;
+    // margin-top: 0px;
+    // color: #FFFFFF;
+    // text-decoration: none;
+        font-size: 0.8em;
+letter-spacing: 0.08em;
+color: rgba(255,255,255,0.85);
+line-height: 30px;
+padding: 7px 14px;
+border: 1px solid rgba(255,255,255,0.3);
+border-radius: 2em;
+transition: all 0.3s ease;
+     }
 
- h2 { 
-color: #FFFFFF;
-font-style: italic;
-font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
-font-size: 18px;
-font-weight: 400;
-text-overflow: ellipsis;
-margin-top: 1em;    
-}
+     h2 { 
+    color: #FFFFFF;
+    font-style: italic;
+    font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    margin-top: 1em;    
+    }
 } 
 
 .page_header {
@@ -208,42 +202,45 @@ margin-top: 1em;
   width: 100%;
   background-color: transparent;
   text-align: center; 
-  padding-top: 125px;   
+  padding-top: 125px;  
 
-  hgroup{
-    background-color: rgba(0, 153, 221, 0.3);  
-    padding-top: 10px;
-  }
+      hgroup{
+        background-color: rgba(0, 153, 221, 0.3);  
+        padding-top: 10px;
+      }
+      
+            h1 a {
+          font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 50px;
+      text-overflow: ellipsis;
+      margin-top: 0px;
+      color: #FFFFFF;
+      text-decoration: none;
+       }
 
-  h1{
-    line-height: 1;
-  }
-
-      h1 a {
-    font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
-font-weight: 700;
-font-style: normal;
-font-size: 50px;
-text-overflow: ellipsis;
-margin-top: 0px;
-color: #FFFFFF;
-text-decoration: none;
- }
-
- h2 { 
-color: #FFFFFF;
-font-style: italic;
-font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
-font-size: 18px;
-font-weight: 400;
-text-overflow: ellipsis;
-margin-top: 1em;    
-}
+       h2 { 
+      color: #FFFFFF;
+      font-style: italic;
+      font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+      font-size: 18px;
+      font-weight: 400;
+      text-overflow: ellipsis;
+      margin-top: 1em;    
+      }
 
 }
-
+ 
 .wrapper_single { 
   padding-top: 500px;
+  padding-bottom: 0px;
+  border-bottom-style: none;  
+  background-color: transparent;
+  background-image: none;
+  .container{
+    background-color: rgba(255,255,255,0.6); 
+  }
 
   .span8.offset2.article-format{
     font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
