@@ -121,6 +121,7 @@ border-left-color: #57ad68;
 body {  
 background-image: url("/images/heroBack.jpg"); 
 background-color: transparent;
+//opacity: 0;
 }
 
 #front-wrapper { 
@@ -168,22 +169,22 @@ box-shadow: none;
   margin-right: auto;
   float: inherit; 
       h1 a {
-    // font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
-    // font-weight: 700;
-    // font-style: normal;
-    // font-size: 50px;
-    // text-overflow: ellipsis;
-    // margin-top: 0px;
-    // color: #FFFFFF;
-    // text-decoration: none;
-        font-size: 0.8em;
-letter-spacing: 0.08em;
-color: rgba(255,255,255,0.85);
-line-height: 30px;
-padding: 7px 14px;
-border: 1px solid rgba(255,255,255,0.3);
-border-radius: 2em;
-transition: all 0.3s ease;
+    font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    text-overflow: ellipsis;
+    margin-top: 0px;
+    color: #FFFFFF;
+    text-decoration: none;
+//         font-size: 0.8em;
+// letter-spacing: 0.08em;
+// color: rgba(255,255,255,0.85);
+// line-height: 30px;
+// padding: 7px 14px;
+// border: 1px solid rgba(255,255,255,0.3);
+// border-radius: 2em;
+// transition: all 0.3s ease;
      }
 
      h2 { 
