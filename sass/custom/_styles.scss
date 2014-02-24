@@ -41,6 +41,7 @@ color: #b3b3b1;
   background-color: #FFFFFF;
   border-top-style: none;
   border-bottom-style: none;
+  background-color: transparent;
 }
 
 .navbar-inner{
@@ -116,11 +117,6 @@ blockquote {
 border-left-width: 3px;
 border-left-style: solid;
 border-left-color: #57ad68;
-}
- 
-#front-wrapper { 
-//background-color: rgba(255,255,255,0.8);  
-background-color: transparent;
 } 
 
 #hero { 
@@ -294,6 +290,7 @@ float: inherit;
 body {
   font-size: 14px;
   font-family: Sans-Serif;
+  height: 100%;
 }
 
 * {
@@ -305,9 +302,8 @@ a {
 }
 
 .blurImg {
-  position:relative;
-  width:100%;
-  //height:1900px;
+  position:relative; 
+  width: 100%; 
   padding-bottom: 1px;
   z-index: -1;
   top:0;
@@ -316,9 +312,10 @@ a {
 
 .blurImg > div {
   position:fixed;
-  width:100%;
-  height:1900px;
-  background-repeat:repeat; 
+  width: 100%;
+  height: 100%;
+  padding-bottom: 1px;
+  background-repeat:repeat;  
   background-size: auto auto;
   background-position:center center;
 }
@@ -410,15 +407,7 @@ nav ul li a.active, nav ul li a:hover{
 @media screen and (max-width: 500px){
   body {
     font-size: 12px;
-  }
-  .blurImg, .blurImg > div {
-    height: 300px;
-  }
-  .header-wrapper > div {
-    width: auto;
-    padding-top: 60px;
-    height: 240px;
-  }
+  } 
 }
 
 
