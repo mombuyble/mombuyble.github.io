@@ -381,6 +381,10 @@ nav {
   border-top: 1px rgba(255,255,255,0.35) solid;
 }
 
+nav ul {
+  margin-left: 0px;
+}
+
 nav ul li {
   display: inline-block;
   margin-right: 20px;
@@ -404,6 +408,10 @@ nav ul li a.active, nav ul li a:hover{
   color: white;
 }
  
+ nav ul li a:hover{
+  text-decoration: none;
+ }
+
 @media screen and (max-width: 500px){
   body {
     font-size: 12px;
