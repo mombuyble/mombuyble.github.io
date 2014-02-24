@@ -41,30 +41,17 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" language="javascript"> 
-		/*!
- * Retina.js v1.1.0
- *
- * Copyright 2013 Imulus, LLC
- * Released under the MIT license
- *
- * Retina.js is an open source script that makes it easy to serve
- * high-resolution images to devices with retina displays.
- */
-(function(){var root=typeof exports=="undefined"?window:exports;var config={check_mime_type:true};root.Retina=Retina;function Retina(){}Retina.configure=function(options){if(options==null)options={};for(var prop in options)config[prop]=options[prop]};Retina.init=function(context){if(context==null)context=root;var existing_onload=context.onload||new Function;context.onload=function(){var images=document.getElementsByTagName("img"),retinaImages=[],i,image;for(i=0;i<images.length;i++){image=images[i];retinaImages.push(new RetinaImage(image))}existing_onload()}};Retina.isRetina=function(){var mediaQuery="(-webkit-min-device-pixel-ratio: 1.5),                      (min--moz-device-pixel-ratio: 1.5),                      (-o-min-device-pixel-ratio: 3/2),                      (min-resolution: 1.5dppx)";if(root.devicePixelRatio>1)return true;if(root.matchMedia&&root.matchMedia(mediaQuery).matches)return true;return false};root.RetinaImagePath=RetinaImagePath;function RetinaImagePath(path,at_2x_path){this.path=path;if(typeof at_2x_path!=="undefined"&&at_2x_path!==null){this.at_2x_path=at_2x_path;this.perform_check=false}else{this.at_2x_path=path.replace(/\.\w+$/,function(match){return"@2x"+match});this.perform_check=true}}RetinaImagePath.confirmed_paths=[];RetinaImagePath.prototype.is_external=function(){return!!(this.path.match(/^https?\:/i)&&!this.path.match("//"+document.domain))};RetinaImagePath.prototype.check_2x_variant=function(callback){var http,that=this;if(this.is_external()){return callback(false)}else if(!this.perform_check&&typeof this.at_2x_path!=="undefined"&&this.at_2x_path!==null){return callback(true)}else if(this.at_2x_path in RetinaImagePath.confirmed_paths){return callback(true)}else{http=new XMLHttpRequest;http.open("HEAD",this.at_2x_path);http.onreadystatechange=function(){if(http.readyState!=4){return callback(false)}if(http.status>=200&&http.status<=399){if(config.check_mime_type){var type=http.getResponseHeader("Content-Type");if(type==null||!type.match(/^image/i)){return callback(false)}}RetinaImagePath.confirmed_paths.push(that.at_2x_path);return callback(true)}else{return callback(false)}};http.send()}};function RetinaImage(el){this.el=el;this.path=new RetinaImagePath(this.el.getAttribute("src"),this.el.getAttribute("data-at2x"));var that=this;this.path.check_2x_variant(function(hasVariant){if(hasVariant)that.swap()})}root.RetinaImage=RetinaImage;RetinaImage.prototype.swap=function(path){if(typeof path=="undefined")path=this.path.at_2x_path;var that=this;function load(){if(!that.el.complete){setTimeout(load,5)}else{that.el.setAttribute("width",that.el.offsetWidth);that.el.setAttribute("height",that.el.offsetHeight);that.el.setAttribute("src",path)}}load()};if(Retina.isRetina()){Retina.init(root)}})();
-
 /*!
  * Header scroll blur effects
  * 
  */
 
- /*
 $(window).scroll(function() {
-  h = $( document ).height();
-  h = h / 10;
-  oVal = ($(window).scrollTop()/h);
-  $('html, body').css('opacity', oVal); 
+	h = $( document ).height();
+	h = h/2;
+	oVal = ($(window).scrollTop() / h);
+	$('.blur').css('opacity', oVal);
 });
-*/
 </script>
 
   
@@ -72,52 +59,30 @@ $(window).scroll(function() {
 </head>
 
 <body   >
-  <div id="front-wrapper">
-  <div id="hero">
-    <div id="hero-inner" >
-      <div class="container">
-        <div class="span10 offset1">
-  <h1>
-    <a href="/">Mom Buyble</a>
-  </h1>
-  <h2>A lost bible for every mom.</h2>
-</div>
-
-      </div>
+    <div class="blurImg">
+    <div style="background-image: url('/images/heroBack.jpg')">
+    </div>
+    <div class="blur"  >
     </div>
   </div>
-  <section id="sub-hero">
-    <div class="container">
-      <div class="row">
-  <div class="navbar">
-    <div class="navbar">
-  <div class="navbar-inner"> 
-    <ul class="nav">
-      <li><a href="/blog/archives">Catelog</a></li>
-      
-      <li>
-        <a href="/contact">
-          Contact
-        </a>
-      </li>
-      
-      <li>
-        <a href="/about">
-          About
-        </a>
-      </li>
-      
-    </ul>  
-    
-  </div>
+  <div class="header-wrapper"> 
+      <div> 
+   <h1>Mom Buyble</h1>
+  
+    <p>A lost bible for every mom.</p>
+  
+  <a href="/">Home</a>
 </div>
-
-
-  </div>
-</div>
-
-    </div>
-  </section>
+ 
+    <nav role='navigation'> 
+        <ul>
+        <li><a href="/blog/archives" class="active">Catelog</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+  </div> 
+<div id="front-wrapper"> 
   <div class="container">
     <div class="row" id="post-container">
     
@@ -157,6 +122,8 @@ $(window).scroll(function() {
         
 
 
+        
+         | <a href="/blog/2014/02/16/test17/#disqus_thread">Comments</a>
         
       </p>
     
@@ -216,6 +183,8 @@ posted in
 
 
         
+         | <a href="/blog/2014/02/16/test16/#disqus_thread">Comments</a>
+        
       </p>
     
   </header>
@@ -246,7 +215,7 @@ Like, seriously, a <em>LOT</em> of text</strong></p>
 
 <h4>Links and Email</h4>
 
-<p>An email <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x31;&#50;&#51;&#64;&#101;&#x78;&#x61;&#x6d;&#x70;&#108;&#101;&#46;&#x63;&#x6f;&#109;">&#49;&#x32;&#x33;&#x40;&#x65;&#120;&#x61;&#x6d;&#x70;&#x6c;&#101;&#46;&#99;&#x6f;&#x6d;</a> link.</p>
+<p>An email <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#x31;&#50;&#51;&#x40;&#101;&#x78;&#97;&#x6d;&#x70;&#108;&#x65;&#x2e;&#99;&#111;&#109;">&#x31;&#50;&#51;&#x40;&#101;&#120;&#x61;&#109;&#x70;&#108;&#x65;&#46;&#x63;&#x6f;&#109;</a> link.</p>
 
 <p>Simple inline link <a href="http://chenluois.com">http://chenluois.com</a>, another inline link <a href="http://smallerapp.com">链接</a>, one more inline link with title <a href="http://resizesafari.com" title="a Safari extension">链接及提示</a>.</p>
 
@@ -383,6 +352,8 @@ posted in
 
 
         
+         | <a href="/blog/2014/02/16/test15/#disqus_thread">Comments</a>
+        
       </p>
     
   </header>
@@ -396,7 +367,7 @@ posted in
 
 <p><img src="http://smallerapp.com/favicon.ico" title="Title here" alt="Smaller icon" /></p>
 
-<p><img src="http://farm8.staticflickr.com/7366/12629887653_01fb96b0e4_o.jpg" alt="Weixin" /></p>
+<p><img src="http://farm8.staticflickr.com/7437/12646418495_bc854c97d1_o.jpg" title="Weixin" alt="Weixin" /></p>
 </div>
   
   
@@ -441,6 +412,8 @@ posted in
         
 
 
+        
+         | <a href="/blog/2014/02/16/test14/#disqus_thread">Comments</a>
         
       </p>
     
@@ -493,6 +466,8 @@ posted in
 
 
         
+         | <a href="/blog/2014/02/16/test13/#disqus_thread">Comments</a>
+        
       </p>
     
   </header>
@@ -543,6 +518,8 @@ posted in
         
 
 
+        
+         | <a href="/blog/2014/02/16/test12/#disqus_thread">Comments</a>
         
       </p>
     
@@ -595,6 +572,8 @@ posted in
 
 
         
+         | <a href="/blog/2014/02/16/test11/#disqus_thread">Comments</a>
+        
       </p>
     
   </header>
@@ -645,6 +624,8 @@ posted in
         
 
 
+        
+         | <a href="/blog/2014/02/16/test10/#disqus_thread">Comments</a>
         
       </p>
     
@@ -697,6 +678,8 @@ posted in
 
 
         
+         | <a href="/blog/2014/02/16/test09/#disqus_thread">Comments</a>
+        
       </p>
     
   </header>
@@ -748,6 +731,8 @@ posted in
 
 
         
+         | <a href="/blog/2014/02/16/test08/#disqus_thread">Comments</a>
+        
       </p>
     
   </header>
@@ -775,8 +760,7 @@ posted in
         </ul>
       </div>
   </div>
-</div>
-
+</div> 
 
   <footer class="footer">
   <div class="container">

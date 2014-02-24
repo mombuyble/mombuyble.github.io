@@ -43,30 +43,17 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" language="javascript"> 
-		/*!
- * Retina.js v1.1.0
- *
- * Copyright 2013 Imulus, LLC
- * Released under the MIT license
- *
- * Retina.js is an open source script that makes it easy to serve
- * high-resolution images to devices with retina displays.
- */
-(function(){var root=typeof exports=="undefined"?window:exports;var config={check_mime_type:true};root.Retina=Retina;function Retina(){}Retina.configure=function(options){if(options==null)options={};for(var prop in options)config[prop]=options[prop]};Retina.init=function(context){if(context==null)context=root;var existing_onload=context.onload||new Function;context.onload=function(){var images=document.getElementsByTagName("img"),retinaImages=[],i,image;for(i=0;i<images.length;i++){image=images[i];retinaImages.push(new RetinaImage(image))}existing_onload()}};Retina.isRetina=function(){var mediaQuery="(-webkit-min-device-pixel-ratio: 1.5),                      (min--moz-device-pixel-ratio: 1.5),                      (-o-min-device-pixel-ratio: 3/2),                      (min-resolution: 1.5dppx)";if(root.devicePixelRatio>1)return true;if(root.matchMedia&&root.matchMedia(mediaQuery).matches)return true;return false};root.RetinaImagePath=RetinaImagePath;function RetinaImagePath(path,at_2x_path){this.path=path;if(typeof at_2x_path!=="undefined"&&at_2x_path!==null){this.at_2x_path=at_2x_path;this.perform_check=false}else{this.at_2x_path=path.replace(/\.\w+$/,function(match){return"@2x"+match});this.perform_check=true}}RetinaImagePath.confirmed_paths=[];RetinaImagePath.prototype.is_external=function(){return!!(this.path.match(/^https?\:/i)&&!this.path.match("//"+document.domain))};RetinaImagePath.prototype.check_2x_variant=function(callback){var http,that=this;if(this.is_external()){return callback(false)}else if(!this.perform_check&&typeof this.at_2x_path!=="undefined"&&this.at_2x_path!==null){return callback(true)}else if(this.at_2x_path in RetinaImagePath.confirmed_paths){return callback(true)}else{http=new XMLHttpRequest;http.open("HEAD",this.at_2x_path);http.onreadystatechange=function(){if(http.readyState!=4){return callback(false)}if(http.status>=200&&http.status<=399){if(config.check_mime_type){var type=http.getResponseHeader("Content-Type");if(type==null||!type.match(/^image/i)){return callback(false)}}RetinaImagePath.confirmed_paths.push(that.at_2x_path);return callback(true)}else{return callback(false)}};http.send()}};function RetinaImage(el){this.el=el;this.path=new RetinaImagePath(this.el.getAttribute("src"),this.el.getAttribute("data-at2x"));var that=this;this.path.check_2x_variant(function(hasVariant){if(hasVariant)that.swap()})}root.RetinaImage=RetinaImage;RetinaImage.prototype.swap=function(path){if(typeof path=="undefined")path=this.path.at_2x_path;var that=this;function load(){if(!that.el.complete){setTimeout(load,5)}else{that.el.setAttribute("width",that.el.offsetWidth);that.el.setAttribute("height",that.el.offsetHeight);that.el.setAttribute("src",path)}}load()};if(Retina.isRetina()){Retina.init(root)}})();
-
 /*!
  * Header scroll blur effects
  * 
  */
 
- /*
 $(window).scroll(function() {
-  h = $( document ).height();
-  h = h / 10;
-  oVal = ($(window).scrollTop()/h);
-  $('html, body').css('opacity', oVal); 
+	h = $( document ).height();
+	h = h/2;
+	oVal = ($(window).scrollTop() / h);
+	$('.blur').css('opacity', oVal);
 });
-*/
 </script>
 
   
@@ -97,14 +84,40 @@ $(window).scroll(function() {
 </div>
 
 </nav> --> 
-  <div class="page_header"><hgroup>
-  <h1><a href="/">Mom Buyble</a></h1>
+  <!-- <div class="page_header"><hgroup>
+ <div> 
+   <h1>Mom Buyble</h1>
   
-    <h2>A lost bible for every mom.</h2>
+    <p>A lost bible for every mom.</p>
   
+  <a href="/">Home</a>
+</div>
 </hgroup>
 
-</div> 
+</div>  -->
+    <div class="blurImg">
+    <div style="background-image: url('/images/heroBack.jpg')">
+    </div>
+    <div class="blur"  >
+    </div>
+  </div>
+  <div class="header-wrapper"> 
+      <div> 
+   <h1>Mom Buyble</h1>
+  
+    <p>A lost bible for every mom.</p>
+  
+  <a href="/">Home</a>
+</div>
+ 
+    <nav role='navigation'> 
+        <ul>
+        <li><a href="/blog/archives" class="active">Catelog</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+  </div> 
   <div class="wrapper_single">
     <div class="container">
       <article class="span8 offset2" role="article">
@@ -141,6 +154,8 @@ $(window).scroll(function() {
         
 
 
+        
+         | <a href="#disqus_thread">Comments</a>
         
       </p>
     
@@ -198,6 +213,12 @@ $(window).scroll(function() {
 </div>
 
         
+          <div class="article-format">
+            <h1>Comments</h1>
+            <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+          </div>
+        
       </article>
     </div>
   </div>
@@ -218,6 +239,22 @@ $(window).scroll(function() {
 <script src="/javascripts/libs/jquery.masonry.min.js" type="text/javascript"></script>
 <script src="/javascripts/custom.js" type="text/javascript"></script>
 
+
+<script type="text/javascript">
+      var disqus_shortname = 'mombuyble';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://mombuyble.com/blog/2014/02/16/test14/';
+        var disqus_url = 'http://mombuyble.com/blog/2014/02/16/test14/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
 
