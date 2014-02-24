@@ -2,19 +2,23 @@
 layout: default
 ---
 
-<div id="front-wrapper">
-  <div id="hero">
-    <div id="hero-inner" >
-      <div class="container">
-        {% include custom/intro.html %}
-      </div>
+  <div class="blurImg">
+    <div style="background-image: url('/images/heroBack.jpg')">
+    </div>
+    <div class="blur"  >
     </div>
   </div>
-  <section id="sub-hero">
-    <div class="container">
-      {% include custom/widgets.html %}
-    </div>
-  </section>
+  <div class="header-wrapper"> 
+      {% include custom/intro.html %} 
+    <nav role='navigation'> 
+        <ul>
+        <li><a href="/blog/archives" class="active">Catelog</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+  </div> 
+<div id="front-wrapper"> 
   <div class="container">
     <div class="row" id="post-container">
     {% assign index = true %}
@@ -40,5 +44,4 @@ layout: default
         </ul>
       </div>
   </div>
-</div>
-
+</div> 

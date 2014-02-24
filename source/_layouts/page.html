@@ -1,7 +1,23 @@
 {% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
 {% include head.html %}
 <!-- <nav role="navigation">{% include navigation.html %}</nav> -->
-<div class="page_header">{% include header.html %}</div> 
+<!-- <div class="page_header">{% include header.html %}</div>  -->
+  <div class="blurImg">
+    <div style="background-image: url('/images/heroBack.jpg')">
+    </div>
+    <div class="blur"  >
+    </div>
+  </div>
+  <div class="header-wrapper"> 
+      {% include custom/intro.html %} 
+    <nav role='navigation'> 
+        <ul>
+        <li><a href="/blog/archives" class="active">Catelog</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+  </div> 
 <div class="wrapper_single">
   <div class="container">
     <article class="span8 offset2 article-format role="article">
