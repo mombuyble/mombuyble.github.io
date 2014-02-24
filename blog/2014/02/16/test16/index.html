@@ -43,21 +43,6 @@ Like, &hellip;" />
 <link href="/stylesheets/fonts.css" rel="stylesheet" type="text/css">
 <link href="/stylesheets/nprogress.css" rel="stylesheet" type="text/css">
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" language="javascript"> 
-/*!
- * Header scroll blur effects
- * 
- */
-
-$(window).scroll(function() {
-	h = $( document ).height();
-	h = h/2;
-	oVal = ($(window).scrollTop() / h);
-	$('.blur').css('opacity', oVal);
-});
-</script>
-
   
 
 </head>
@@ -112,9 +97,9 @@ $(window).scroll(function() {
   <a href="/">Home</a>
 </div>
  
-    <nav role='navigation'> 
+    <nav role='navigation'  id="menu"> 
         <ul>
-        <li><a href="/blog/archives" class="active">Catelog</a></li>
+        <li><a href="/blog/archives">Catelog</a></li>
         <li><a href="/contact">Contact</a></li>
         <li><a href="/about">About</a></li>
       </ul>
@@ -196,7 +181,7 @@ Like, seriously, a <em>LOT</em> of text</strong></p>
 
 <h4>Links and Email</h4>
 
-<p>An email <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x31;&#x32;&#x33;&#64;&#101;&#120;&#x61;&#109;&#x70;&#108;&#101;&#46;&#99;&#x6f;&#109;">&#49;&#50;&#51;&#x40;&#101;&#120;&#97;&#x6d;&#112;&#108;&#101;&#x2e;&#99;&#x6f;&#109;</a> link.</p>
+<p>An email <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#49;&#50;&#x33;&#x40;&#x65;&#x78;&#97;&#109;&#x70;&#x6c;&#x65;&#46;&#99;&#111;&#109;">&#49;&#x32;&#x33;&#x40;&#101;&#120;&#x61;&#x6d;&#x70;&#108;&#101;&#46;&#x63;&#111;&#x6d;</a> link.</p>
 
 <p>Simple inline link <a href="http://chenluois.com">http://chenluois.com</a>, another inline link <a href="http://smallerapp.com">链接</a>, one more inline link with title <a href="http://resizesafari.com" title="a Safari extension">链接及提示</a>.</p>
 
@@ -352,6 +337,25 @@ posted in
     <p class="pull-left">
   &copy; 2014 <a href="mailto:me@heropotato.com">Y.WEN</a>
 </p>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" language="javascript">   
+
+$(window).scroll(function(blurred) {
+	h = $( document ).height();
+	h = h/2;
+	oVal = ($(window).scrollTop() / 480);
+	$('.blur').css('opacity', oVal);
+});
+
+$(document).ready(function(){
+	$('#menu a').each(function(){ 
+	   if($(this).attr('href') == (location.pathname)){
+	     $(this).addClass('active');
+	   }
+	});  
+}); 
+</script>
 
   </div>
 </footer>
