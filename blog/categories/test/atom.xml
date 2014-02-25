@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Test | Mombuyble]]></title>
+  <link href="http://mombuyble.com/blog/categories/test/atom.xml" rel="self"/>
+  <link href="http://mombuyble.com/"/>
+  <updated>2014-02-24T22:58:16-05:00</updated>
+  <id>http://mombuyble.com/</id>
+  <author>
+    <name><![CDATA[Y.WEN]]></name>
+    <email><![CDATA[me@mombuyble.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Test18]]></title>
+    <link href="http://mombuyble.com/blog/2014/02/24/test18/"/>
+    <updated>2014-02-24T22:08:05-05:00</updated>
+    <id>http://mombuyble.com/blog/2014/02/24/test18</id>
+    <content type="html"><![CDATA[<h4>Emoji plug-in test</h4>
+
+<p><img alt="smile" src="/images/emoji/smile.png" class="emoji" />
+<img alt="imp" src="/images/emoji/imp.png" class="emoji" />
+<img alt="hankey" src="/images/emoji/hankey.png" class="emoji" />
+<img alt="japanese_ogre" src="/images/emoji/japanese_ogre.png" class="emoji" />
+<img alt="japanese_goblin" src="/images/emoji/japanese_goblin.png" class="emoji" />
+<img alt="video_game" src="/images/emoji/video_game.png" class="emoji" />
+<img alt="rocket" src="/images/emoji/rocket.png" class="emoji" />
+<img alt="shipit" src="/images/emoji/shipit.png" class="emoji" /></p>
+]]></content>
+  </entry>
+  
+</feed>
