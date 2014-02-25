@@ -173,6 +173,7 @@
 
   $(document).ready(function(){
     $('#menu a').each(function(){ 
+      alert($(this).attr('href') + "-----" + location.pathname);
        if($(this).attr('href') == (location.pathname)){
          $(this).addClass('active');
        }
