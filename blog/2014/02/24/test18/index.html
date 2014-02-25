@@ -264,9 +264,8 @@ posted in
   });
 
   $(document).ready(function(){
-    $('#menu a').each(function(){ 
-      alert($(this).attr('href') + "-----" + location.pathname);
-       if($(this).attr('href') == (location.pathname)){
+    $('#menu a').each(function(){  
+       if($(this).attr('href') == (location.pathname) || ($(this).attr('href')+'/') == (location.pathname)){
          $(this).addClass('active');
        }
     });  
