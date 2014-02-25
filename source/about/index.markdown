@@ -4,24 +4,19 @@ title:
 comments: false
 sharing: false
 footer: true
---- 
-Yong **WEN** 
+---  
 
-Yong holds a M.S degree in Information Systems from [Northeatern University][neuURL].
+Weijia **GUO**
 
-In the past decade, Yong has worked as editor, photographer and developer. Although job functionalities are completely different, but one thing is in common: modeling the real world in virtual environments.
+A daughter, wife and mother. 
+
+She spent most of her time with **Wyatt**, a supercalifragilisticexpiadocious gentle man. On top of that, she would like tweeting on Weibo. 
+
+If you would like to reach out, shoot an [email][]. 
+
+In addition, for those WeChat users, please scan the QR code to join. 
+
+![Weixin](http://farm8.staticflickr.com/7437/12646418495_bc854c97d1_o.jpg "Add WeChat by scan the QR code")  
  
-When not working, Yong would like to pin what he likes on [Pinterest][PinterestURL], take a glance at tweets on [Twitter][TwitterURL], and read what great minds thought on [Medium][MediumURL]. 
-
-If you want to get in touch, send an [email][emailURL] or check his [site][].
-
-{% img http://farm4.staticflickr.com/3728/9319923266_41b75c1a86_o.jpg %}
-
-[maldenURL]: http://www.cityofmalden.org/
-[neuURL]: http://www.northeastern.edu/
-[MediumURL]: https://medium.com/@heropotato
-[PinterestURL]: http://pinterest.com/heropotato/
-[site]: http://www.heropotato.com
-[TwitterURL]: https://twitter.com/heropotato
-[emailURL]: mailto:me@heropotato.com
+[email]: mailto:me@mombuyble.com
  
