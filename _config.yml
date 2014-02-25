@@ -3,8 +3,8 @@
 # ----------------------- #
 
 url: http://mombuyble.com
-title: Mom Buyble
-subtitle: A lost bible for every mom.
+title: Mombuyble
+subtitle: Capture the essence
 author: Y.WEN
 simple_search: http://google.com/search
 description:
@@ -102,7 +102,7 @@ disqus_short_name: mombuyble
 disqus_show_comment_count: true
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-48387721-1
 
 # Facebook Like
 facebook_like: false

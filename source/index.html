@@ -3,20 +3,11 @@ layout: default
 ---
 
   <div class="blurImg">
-    <div style="background-image: url('/images/heroBack.jpg')">
-    </div>
-    <div class="blur"  >
-    </div>
+      {% include custom/blur.html %} 
   </div>
   <div class="header-wrapper"> 
       {% include custom/intro.html %} 
-    <nav role='navigation'  id="menu"> 
-        <ul>
-        <li><a href="/blog/archives" class="active">Catelog</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/about">About</a></li>
-      </ul>
-    </nav>
+      {% include custom/navigation.html %} 
   </div> 
 <div id="front-wrapper"> 
   <div class="container">
