@@ -106,3 +106,6 @@ google_analytics_tracking_id: UA-48387721-1
 
 # Facebook Like
 facebook_like: false
+
+# Emoji for Octopress
+emoji_dir: /images/emoji
