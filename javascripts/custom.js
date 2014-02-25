@@ -85,20 +85,6 @@ $(function(){
 
 });
 
-$(window).scroll(function(blurred) {
-  h = $( document ).height();
-  h = h/2;
-  oVal = ($(window).scrollTop() / 480);
-  $('.blur').css('opacity', oVal);
-});
-
-$(document).ready(function(){
-  $('#menu a').each(function(){ 
-     if($(this).attr('href') == (location.pathname)){
-       $(this).addClass('active');
-     }
-  });  
-}); 
 
 
 
