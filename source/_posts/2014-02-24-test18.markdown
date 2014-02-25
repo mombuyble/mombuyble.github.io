@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Test18"
+date: 2014-02-24 22:08:05 -0500
+comments: true
+categories: ["Emoji", "Test", "Gem"]
+---
+
+#### Emoji plug-in test
+
+{%gemoji smile%} 
+{%gemoji imp%}
+{%gemoji hankey%}
+{%gemoji japanese_ogre%}
+{%gemoji japanese_goblin%} 
+{%gemoji video_game%}
+{%gemoji rocket%}
+{%gemoji shipit%}
