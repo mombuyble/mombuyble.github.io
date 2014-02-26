@@ -66,6 +66,14 @@ text-transform: uppercase;
 color: #b3b3b1;
 }
 
+.pager li>a {
+  background-color: rgba(0,0,0,0.3);
+}
+
+.pager li>a:hover, a:focus {
+  background-color: rgba(255,255,255,0.9);
+}
+
 .meta { 
 font-size: 14px;
 font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
@@ -164,6 +172,7 @@ body {
   font-size: 14px;
   font-family: Sans-Serif;
   height: 100%;
+  background-color: transparent;
 }
 
 * {
@@ -296,7 +305,7 @@ nav ul li a.active, nav ul li a:hover{
 } 
 
 .copyrights{
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.3);
   width: 90px;
   margin-left: auto;
   margin-right: auto;
