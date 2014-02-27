@@ -186,6 +186,14 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+.entry-title > a:hover {
+  color: #0099dd;
+}
+
 .blurImg {
   position:relative; 
   width: 100%; 
