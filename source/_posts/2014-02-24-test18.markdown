@@ -7,12 +7,17 @@ categories: ["Emoji", "Test", "Gem"]
 ---
 
 #### Emoji plug-in test
+{%gemoji iphone%} 
+{%gemoji computer%}  
+{%gemoji dollar%}   
+{%gemoji honeybee%} 
+{%gemoji rocket%}
+{%gemoji 100%}
 
-{%gemoji smile%} 
+{%gemoji neckbeard%} 
 {%gemoji imp%}
 {%gemoji hankey%}
 {%gemoji japanese_ogre%}
 {%gemoji japanese_goblin%} 
 {%gemoji video_game%}
 {%gemoji rocket%}
-{%gemoji shipit%}
