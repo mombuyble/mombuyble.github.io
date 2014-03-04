@@ -1,16 +1,14 @@
 ---
-layout: page
-title:
-comments: false 
-footer: true
---- 
+layout: default
+---
+<div class="blurImg">
+      {% include custom/blur.html %} 
+</div>
+<div class="header-wrapper"> 
+      {% include custom/intro.html %} 
+      {% include custom/navigation.html %} 
+</div> 
+<div class="timeline-wrapper">  
+{% include custom/contact.html %} 
+</div> 
 
-Weijia **GUO** is a daughter, a wife and a mother. 
-
-She spent most of her time with Wyatt, a supercalifragilisticexpiadocious gentle man. On top of that, she tweeted on Weibo. 
-
-If you would like to reach out, shoot an [email][]. 
-
-![Weixin](http://farm8.staticflickr.com/7437/12646418495_bc854c97d1_o.jpg "Add WeChat by scan the QR code")  
- 
-[email]: mailto:me@mombuyble.com
