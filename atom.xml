@@ -4,7 +4,7 @@
   <title><![CDATA[Mombuyble]]></title>
   <link href="http://mombuyble.com/atom.xml" rel="self"/>
   <link href="http://mombuyble.com/"/>
-  <updated>2014-03-03T21:11:09-05:00</updated>
+  <updated>2014-03-03T22:57:01-05:00</updated>
   <id>http://mombuyble.com/</id>
   <author>
     <name><![CDATA[Y.WEN]]></name>
@@ -20,14 +20,20 @@
     <id>http://mombuyble.com/blog/2014/02/24/test18</id>
     <content type="html"><![CDATA[<h4>Emoji plug-in test</h4>
 
-<p><img alt="smile" src="http://mombuyble.com/images/emoji/smile.png" class="emoji" />
+<p><img alt="iphone" src="http://mombuyble.com/images/emoji/iphone.png" class="emoji" />
+<img alt="computer" src="http://mombuyble.com/images/emoji/computer.png" class="emoji" /><br/>
+<img alt="dollar" src="http://mombuyble.com/images/emoji/dollar.png" class="emoji" /> <br/>
+<img alt="honeybee" src="http://mombuyble.com/images/emoji/honeybee.png" class="emoji" />
+<img alt="rocket" src="http://mombuyble.com/images/emoji/rocket.png" class="emoji" />
+<img alt="100" src="http://mombuyble.com/images/emoji/100.png" class="emoji" /></p>
+
+<p><img alt="neckbeard" src="http://mombuyble.com/images/emoji/neckbeard.png" class="emoji" />
 <img alt="imp" src="http://mombuyble.com/images/emoji/imp.png" class="emoji" />
 <img alt="hankey" src="http://mombuyble.com/images/emoji/hankey.png" class="emoji" />
 <img alt="japanese_ogre" src="http://mombuyble.com/images/emoji/japanese_ogre.png" class="emoji" />
 <img alt="japanese_goblin" src="http://mombuyble.com/images/emoji/japanese_goblin.png" class="emoji" />
 <img alt="video_game" src="http://mombuyble.com/images/emoji/video_game.png" class="emoji" />
-<img alt="rocket" src="http://mombuyble.com/images/emoji/rocket.png" class="emoji" />
-<img alt="shipit" src="http://mombuyble.com/images/emoji/shipit.png" class="emoji" /></p>
+<img alt="rocket" src="http://mombuyble.com/images/emoji/rocket.png" class="emoji" /></p>
 ]]></content>
   </entry>
   
