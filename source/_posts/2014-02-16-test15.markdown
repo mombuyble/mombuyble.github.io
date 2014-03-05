@@ -6,8 +6,7 @@ comments: true
 categories: ["1", "2", "3"]
 ---
 
-![Mou icon](http://mouapp.com/Mou_128.png) 
-
+![Mou icon](http://mouapp.com/Mou_128.png)  
 #### Blockquotes
 
 > Right angle brackets &gt; are used for block quotes.
