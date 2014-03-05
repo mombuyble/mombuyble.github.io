@@ -1,5 +1,6 @@
 ---
 layout: default
+footer: true
 ---
 <div class="blurImg">
       {% include custom/blur.html %} 

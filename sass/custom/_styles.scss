@@ -469,6 +469,15 @@ a:hover:before {
 //
 // Timeline CSS definition
  
+
+.timeline-wrapper{
+    margin-top: 449px;
+    background-image: url('/images/howtoBG.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+}
+
 .timeline-container{
     background-color: transparent; 
     color: white;
@@ -481,17 +490,18 @@ a:hover:before {
     margin-left: 10px;
     margin-right: 10px;
 }
-
-.timeline-wrapper{
-    margin-top: 449px;
-    background-image: url('/images/howtoBG.jpg'); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; 
-}
+ 
 .timeline-page-header{
     text-align: center;
     text-align: -webkit-center;
+}
+
+.timelinePageTitle{
+    background-image: url('/images/titlebg.png');
+    background-size: 690px 2px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    font-family: fantasy;
 }
 
 .timeline {
@@ -545,30 +555,30 @@ a:hover:before {
             position: relative;
             //-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
             //box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-            background-color: rgba(0,0,0,0.4);
+            background-color: rgba(0,0,0,0.3); //rgba(7,20,30,.7);
         }
 
             .timeline > li > .timeline-panel:before {
                 position: absolute;
-                top: 26px;
+                top: 27px;
                 right: -15px;
                 display: inline-block;
-//                border-top: 15px solid transparent;
-//                border-left: 15px solid #ccc;
-//                border-right: 0 solid #ccc;
-//                border-bottom: 14px solid transparent;
+                border-top: 14px solid transparent;
+                border-left: 14px solid transparent;
+                border-right: 0 solid rgba(0,0,0,0.3);
+                border-bottom: 14px solid transparent; 
                 content: " ";
             }
 
             .timeline > li > .timeline-panel:after {
                 position: absolute;
                 top: 27px;
-                right: -14px;
+                right: -15px;
                 display: inline-block;
-//                border-top: 14px solid transparent;
-//                border-left: 14px solid #fff;
-//                border-right: 0 solid #fff;
-//                border-bottom: 14px solid transparent;
+                border-top: 14px solid transparent;
+                border-left: 14px solid rgba(0,0,0,0.3);
+                border-right: 0 solid transparent;
+                border-bottom: 14px solid transparent; 
                 content: " ";
             }
 
@@ -597,7 +607,7 @@ a:hover:before {
 
             .timeline > li.timeline-inverted > .timeline-panel:before {
                 border-left-width: 0;
-                border-right-width: 15px;
+                border-right-width: 14px;
                 left: -15px;
                 right: auto;
             }
@@ -605,7 +615,7 @@ a:hover:before {
             .timeline > li.timeline-inverted > .timeline-panel:after {
                 border-left-width: 0;
                 border-right-width: 14px;
-                left: -14px;
+                left: -15px;
                 right: auto;
             }
 
@@ -632,6 +642,7 @@ a:hover:before {
 .timeline-title {
     margin-top: 0;
     color: inherit;
+    font-weight: bolder;
 }
 
 .timeline-time{
@@ -683,3 +694,35 @@ a:hover:before {
         }
 }
  
+
+// Self page
+
+.self-wrapper{
+    margin-top: 449px;
+    background-image: url('/images/selfBG.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    min-height: 900px;
+}
+
+
+.self-container{
+    background-color: transparent; 
+    color: white;
+    padding-top: 50px;
+    background-repeat: repeat;
+}
+
+.self-page-header{
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+.selfPageTitle{
+    background-image: url('/images/titlebg.png');
+    background-size: 690px 2px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    font-family: fantasy;
+}

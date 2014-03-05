@@ -1,24 +1,14 @@
 ---
-layout: page
-title:
-comments: false
-sharing: false
+layout: default
 footer: true
----  
-
-{%gemoji japanese_ogre%}
-
-Weijia **GUO**
-
-A daughter, wife and mother. 
-
-She spent most of her time with **Wyatt**, a supercalifragilisticexpiadocious gentle man. On top of that, she would like tweeting on Weibo.   
-
-*If you would like to reach out, shoot an [email][].*
-
-*In addition, for those WeChat users, please scan the QR code to join.*
-
-![Weixin](http://farm8.staticflickr.com/7437/12646418495_bc854c97d1_o.jpg "Add WeChat by scan the QR code")  
- 
-[email]: mailto:me@mombuyble.com
- 
+---
+<div class="blurImg">
+      {% include custom/blur.html %} 
+</div>
+<div class="header-wrapper"> 
+      {% include custom/intro.html %} 
+      {% include custom/navigation.html %} 
+</div> 
+<div class="self-wrapper">  
+{% include custom/self.html %} 
+</div>
