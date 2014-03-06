@@ -628,24 +628,32 @@ a:hover:before {
                 right: auto;
             }
 
-.timeline-badge.primary {
-    background-color: #2e6da4 !important;
+.timeline-badge.step1 {
+    background-color: #7f8c8d !important;
+}
+ 
+.timeline-badge.step2 {
+    background-color: #2ecc71 !important;
 }
 
-.timeline-badge.success {
-    background-color: #3f903f !important;
+.timeline-badge.step3 {
+    background-color: #3498db !important;
 }
 
-.timeline-badge.warning {
-    background-color: #f0ad4e !important;
+.timeline-badge.step4 {
+    background-color: #8e44ad !important;
 }
 
-.timeline-badge.danger {
-    background-color: #d9534f !important;
+.timeline-badge.step5 {
+    background-color: #f1c40f !important;
 }
 
-.timeline-badge.info {
-    background-color: #5bc0de !important;
+.timeline-badge.step6 {
+    background-color: #e67e22 !important;
+}
+
+.timeline-badge.step7 {
+    background-color: #e74c3c !important;
 }
 
 .timeline-title {
@@ -734,5 +742,6 @@ a:hover:before {
     background-repeat: no-repeat;
     background-position: center bottom;
     font-family: "freight-sans-pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    padding-bottom: 10px;
     font-size: 38px;
 }
