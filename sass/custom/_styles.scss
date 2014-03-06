@@ -569,25 +569,25 @@ a:hover:before {
 
             .timeline > li > .timeline-panel:before {
                 position: absolute;
-                top: 27px;
-                right: -15.5px;
+                top: 26px;
+                right: -15px;
                 display: inline-block;
                 border-top: 15px solid transparent;
                 border-left: 15px solid transparent;
                 border-right: 0 solid rgba(0,0,0,0.3);
                 border-bottom: 15px solid transparent;
-                content: " ";
+                content: " "; 
             }
 
             .timeline > li > .timeline-panel:after {
                 position: absolute;
                 top: 27px;
-                right: -15.5px;
+                right: -14px;
                 display: inline-block;
-                border-top: 15px solid transparent;
-                border-left: 15px solid rgba(0,0,0,0.3);
+                border-top: 14px solid transparent;
+                border-left: 14px solid rgba(0,0,0,0.3);
                 border-right: 0 solid transparent;
-                border-bottom: 15px solid transparent;
+                border-bottom: 14px solid transparent;
                 content: " ";
             }
 
@@ -616,14 +616,14 @@ a:hover:before {
             .timeline > li.timeline-inverted > .timeline-panel:before {
                 border-left-width: 0;
                 border-right-width: 15px;
-                left: -15.5px;
+                left: -15px;
                 right: auto;
             }
 
             .timeline > li.timeline-inverted > .timeline-panel:after {
                 border-left-width: 0;
-                border-right-width: 15px;
-                left: -15.5px;
+                border-right-width: 14px;
+                left: -14px;
                 right: auto;
             }
 
