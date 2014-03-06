@@ -176,8 +176,7 @@ body {
   font-size: 14px;
   font-family: Sans-Serif;
   height: 100%;
-  background-color: white; //#f7f5f5;
-
+  background-color: transparent; //#f7f5f5;
 }
 
 * {
@@ -434,6 +433,9 @@ a:hover:before {
 
   -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
   animation: stretchdelay 1.2s infinite ease-in-out;
+    
+   -webkit-animation: scaleout 1.0s infinite ease-in-out;
+  animation: scaleout 1.0s infinite ease-in-out;
 }
 
 .spinner .rect2 {
@@ -468,6 +470,25 @@ a:hover:before {
   }  20% {
     transform: scaleY(1.0);
     -webkit-transform: scaleY(1.0);
+  }
+} 
+
+@-webkit-keyframes scaleout {
+  0% { -webkit-transform: scale(0.0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes scaleout {
+  0% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 100% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    opacity: 0;
   }
 }
 
@@ -527,7 +548,7 @@ a:hover:before {
         position: absolute;
         content: " ";
         width: 3px;
-        background-color: #eeeeee;
+        background-color: white; //#eeeeee;
         left: 50%;
         margin-left: -1.5px;
     }

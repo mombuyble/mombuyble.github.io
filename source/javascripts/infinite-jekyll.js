@@ -3,12 +3,12 @@ $(function() {
   var postURLs,
       isFetchingPosts = false,
       shouldFetchPosts = true,
-      postsToLoad = $(".posts").children().length,
+      postsToLoad = $(".").children().length,
       loadNewPostsThreshold = 3000;
   
   // Load the JSON file containing all URLs
-  $.getJSON("/all-posts.json", function(data) {
-    postURLs = data["posts"];
+  $.getJSON('/all-posts.json', function(data) {
+    postURLs = data["paginator.posts"]; //postURLs = data["posts"];
     
     // If there aren't any more posts available to load than already visible, disable fetching
     if (postURLs.length <= postsToLoad)
@@ -16,7 +16,7 @@ $(function() {
   });
 	
   // If there's no spinner, it's not a page where posts should be fetched
-  if ($(".spinner").length < 1)
+  if ($(".infinite-spinner").length < 1)
     shouldFetchPosts = false;
 	
   // Are we close to the end of the page? If we are, load more posts
@@ -68,7 +68,7 @@ $(function() {
     var postURL = postURLs[index];
 		
     $.get(postURL, function(data) {
-      $(data).find(".wrapper_single").appendTo(".posts");
+      $(data).find(".post").appendTo(".posts");
       callback();
     });
   }
@@ -76,7 +76,7 @@ $(function() {
   function disableFetching() {
     shouldFetchPosts = false;
     isFetchingPosts = false;
-    $(".spinner").fadeOut();
+    $(".infinite-spinner").fadeOut();
   }
 	
 });
