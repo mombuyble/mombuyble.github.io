@@ -744,3 +744,17 @@ a:hover:before {
     padding-bottom: 10px;
     font-size: 38px;
 }
+
+.self-content{ 
+    font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+    font-size: 22px;
+}
+
+.self-content > p{
+    background-color: rgba(0,0,0,0.3); 
+    width: 90%;
+    max-width: 720px;  
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
