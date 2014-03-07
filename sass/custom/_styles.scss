@@ -423,10 +423,11 @@ a:hover:before {
 // Fancy spinner
 
 .spinner {
-  margin: 100px auto;
-  width: 32px;
-  height: 32px;
-  position: relative;
+    margin: 100px auto;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    background-color: white;
 }
 
 .cube1, .cube2 {
