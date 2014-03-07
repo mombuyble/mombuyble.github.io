@@ -118,6 +118,10 @@ border-left-color: #57ad68;
     }
 }
 
+.article-format .meta{
+    font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+}
+
 .span10.offset1 {
   margin-left: auto;
   margin-right: auto;
@@ -147,7 +151,7 @@ border-left-color: #57ad68;
 .wrapper_single { 
   padding-bottom: 0px;
   border-bottom-style: none;
-  background-color: transparent;
+  background-color: white;
   background-image: none;
   margin-top: 450px;
   padding-top: 50px;
