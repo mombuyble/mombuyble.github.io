@@ -155,7 +155,9 @@ border-left-color: #57ad68;
   background-image: none;
   margin-top: 450px;
   padding-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: -50px;
+  min-height: 100%;
+  padding-bottom: 50px;
   .container{
     //background-color: rgba(255,255,255,0.6);
   }
