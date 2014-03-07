@@ -252,31 +252,36 @@ posted in
       </article>
     </div>
   </div>
-  <footer class="footer">
-  <div class="container">
-    <p class="pull-left">
-<div class="copyrights">  &copy; 2014 &nbsp;<a href="mailto:me@heropotato.com" class="footerButton pulse-grow">Y.WEN</a></div> 
-</p> 
-  </div>
+  <footer class="sticky_footer">
+    <div class="copyrights">  &copy; 2014 &nbsp;<a href="mailto:me@heropotato.com" class="footerButton pulse-grow">Y.WEN</a></div> 
 </footer>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
 <script>window.jQuery || document.write('<script src="/javascripts/libs/jquery.min.js" type="text/javascript"><\/script>')</script> 
 <script type="text/javascript">  
-  $(window).scroll(function(blurred) {
-    h = $( document ).height();
-    h = h/2;
-    oVal = ($(window).scrollTop() / 480);
-    $('.blur').css('opacity', oVal);
-  });
+          $(window).scroll(function(blurred) {
+            h = $( document ).height();
+            h = h/2;
+            oVal = ($(window).scrollTop() / 480);
+            $('.blur').css('opacity', oVal);
+          });
 
-  $(document).ready(function(){
-    $('#menu a').each(function(){  
-       if($(this).attr('href') == (location.pathname) || ($(this).attr('href')+'/') == (location.pathname)){
-         $(this).addClass('active');
-       }
-    });  
-  }); 
+      $(document).ready(function(){
+        $('#menu a').each(function(){  
+           if($(this).attr('href') == (location.pathname) || ($(this).attr('href')+'/') == (location.pathname)){
+             $(this).addClass('active');
+           }
+        });  
+      }); 
+    
+    // fix ie z-index bug
+//        $(function() {
+//            var zIndexNumber = 1000;
+//            $('div').each(function() {
+//                ver v = $(this).('zIndex');
+//                $(this).css('zIndex', zIndexNumber + v); 
+//            });
+//        });    
      
 </script>
 <script src="/javascripts/libs/angular.min.js" type="text/javascript"></script>
