@@ -1,6 +1,5 @@
 ---
-layout: default
-footer: true
+layout: default 
 ---
 <div class="blurImg">
       {% include custom/blur.html %} 
@@ -11,5 +10,4 @@ footer: true
 </div> 
 <div class="timeline-wrapper">  
 {% include custom/contact.html %} 
-</div> 
-
+</div>
